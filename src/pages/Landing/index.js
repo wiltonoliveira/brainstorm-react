@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./style.css";
 import Draggable from "react-draggable";
 import { v4 as uuidv4 } from "uuid";
 
-import logoImg from "../src/assets/images/logoBrainstorm.png"
+import logoImg from "../../assets/images/logoBrainstorm.png"
 
 var randomColor = require("randomcolor");
 
-function App() {
+function Landing() {
   const [item, setItem] = useState("");
   const [items, setItems] = useState(
     JSON.parse(localStorage.getItem("items")) || []
